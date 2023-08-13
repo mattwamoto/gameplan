@@ -62,7 +62,7 @@ These are some of the tools used on frontend:
 ### Docker
 You need Docker, docker-compose and git setup on your machine. Refer [Docker documentation](https://docs.docker.com/). After that, run the following commands:
 ```
-git clone https://github.com/frappe/gameplan
+git clone https://github.com/mattwamoto/gameplan.git
 cd gameplan/docker
 docker-compose up
 ```
@@ -85,7 +85,7 @@ Currently, this app depends on the `develop` branch of [frappe](https://github.c
 1. Run the following commands:
     ```sh
     bench new-site gameplan.test
-    bench get-app gameplan
+    bench get-app https://github.com/mattwamoto/gameplan.git
     bench --site gameplan.test install-app gameplan
     bench --site gameplan.test add-to-hosts
     bench --site gameplan.test browse --user Administrator
